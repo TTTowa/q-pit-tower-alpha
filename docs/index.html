@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/matter.min.js"></script>
+</head>
+<body>
+    <img id="suikaImg" src="./src/suika.png" style="display: none;">
+    <img id="tmpsvg" src="./src/q-pit-logo.png" style="display: none;">
+    <div class="game-wrap"></div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-text">あなたの記録は<span id="record"></span>です。</p>
+      </div>
+  </div>
+
+    <!-- preload スクリプトの読み込み -->
+    <!-- <script src="./preload.js"></script> -->
+    <script src="./src/renderer.js"></script>
+
+    <!-- その他のスクリプト -->
+    <script>
+        // // preload.js で渡された electron モジュールを使う例
+        // window.onload = () => {
+        //     const { ipcRenderer } = window.electron;
+        //     ipcRenderer.send('message-from-renderer', 'Hello from Renderer Process!');
+        // };
+    </script>
+</body>
+</html>
